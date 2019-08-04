@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LaunchController" customModule="AppContact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FHZ-EK-oJu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HrE-c0-48m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppContact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3v-PD-KTO">
+                                        <rect key="frame" x="142.5" y="120" width="129.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="AAT-zn-Gyq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LeQ-9p-4AP">
+                                        <rect key="frame" x="107" y="195" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="sGL-Qq-3eA"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpP-X9-SWE">
+                                        <rect key="frame" x="107" y="275" width="200" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYt-Ig-5DI">
+                                        <rect key="frame" x="167" y="355" width="80" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Lvl-TL-wng"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="20"/>
+                                        <state key="normal" title="LogIn">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LogInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVM-Xd-YaA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="RYt-Ig-5DI" secondAttribute="bottom" constant="419.5" id="4Gn-mV-zNE"/>
+                                    <constraint firstItem="RYt-Ig-5DI" firstAttribute="centerX" secondItem="dpP-X9-SWE" secondAttribute="centerX" id="9hC-in-kHE"/>
+                                    <constraint firstItem="LeQ-9p-4AP" firstAttribute="top" secondItem="V3v-PD-KTO" secondAttribute="bottom" constant="50" id="Bn8-Bd-aHZ"/>
+                                    <constraint firstItem="dpP-X9-SWE" firstAttribute="top" secondItem="LeQ-9p-4AP" secondAttribute="bottom" constant="50" id="FHq-28-x0r"/>
+                                    <constraint firstItem="V3v-PD-KTO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HrE-c0-48m" secondAttribute="leading" id="JUX-8j-UEX"/>
+                                    <constraint firstItem="RYt-Ig-5DI" firstAttribute="top" secondItem="dpP-X9-SWE" secondAttribute="bottom" constant="50" id="RDK-nO-16k"/>
+                                    <constraint firstItem="LeQ-9p-4AP" firstAttribute="centerX" secondItem="V3v-PD-KTO" secondAttribute="centerX" id="W2o-zc-tFK"/>
+                                    <constraint firstItem="dpP-X9-SWE" firstAttribute="width" secondItem="LeQ-9p-4AP" secondAttribute="width" id="XYf-tO-HBt"/>
+                                    <constraint firstAttribute="trailing" secondItem="V3v-PD-KTO" secondAttribute="trailing" constant="20" id="bdp-Li-ou4"/>
+                                    <constraint firstItem="dpP-X9-SWE" firstAttribute="centerX" secondItem="LeQ-9p-4AP" secondAttribute="centerX" id="c4p-4y-jTS"/>
+                                    <constraint firstItem="V3v-PD-KTO" firstAttribute="centerX" secondItem="HrE-c0-48m" secondAttribute="centerX" id="fw7-QA-4iM"/>
+                                    <constraint firstItem="V3v-PD-KTO" firstAttribute="top" secondItem="HrE-c0-48m" secondAttribute="top" constant="120" id="nnT-zA-UAQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FHZ-EK-oJu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4zR-HW-wue"/>
+                            <constraint firstAttribute="trailing" secondItem="FHZ-EK-oJu" secondAttribute="trailing" id="8PJ-X2-GUi"/>
+                            <constraint firstAttribute="bottom" secondItem="HrE-c0-48m" secondAttribute="bottom" id="HZQ-Qe-O6c"/>
+                            <constraint firstItem="FHZ-EK-oJu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KsZ-v3-r2j"/>
+                            <constraint firstAttribute="trailing" secondItem="HrE-c0-48m" secondAttribute="trailing" id="M3A-R0-Xwb"/>
+                            <constraint firstItem="HrE-c0-48m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Pis-Je-hDj"/>
+                            <constraint firstAttribute="bottom" secondItem="FHZ-EK-oJu" secondAttribute="bottom" id="ij3-5W-Q4g"/>
+                            <constraint firstItem="HrE-c0-48m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="muM-IE-Ljl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AppContactLabel" destination="V3v-PD-KTO" id="Yx5-3I-Y1S"/>
+                        <outlet property="PasswordTextField" destination="dpP-X9-SWE" id="y0m-h0-RnH"/>
+                        <outlet property="ScrollView" destination="HrE-c0-48m" id="Ag1-oV-02z"/>
+                        <outlet property="UserNameTextField" destination="LeQ-9p-4AP" id="hJz-6W-YEW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="356.52173913043481" y="-115.17857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="3884" height="5826"/>
+    </resources>
+</document>
