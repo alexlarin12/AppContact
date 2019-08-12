@@ -13,17 +13,23 @@ class LaunchController: UIViewController {
     @IBOutlet weak var UserNameTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var ScrollView: UIScrollView!
-    @IBAction func LogInButton(_ sender: Any) {
+    @IBAction func LogInButton(_ sender: UIButton) {
         checkTextFields()
+    }
+    @IBAction func UnwindSegue(unwindSegue:UIStoryboardSegue){
+        
     }
     func checkTextFields() {
         if UserNameTextField.text == "",
             PasswordTextField.text == "" {
             print("Успешный вход.")
+            performSegue(withIdentifier: "SuccessLogin", sender: nil)
+            
         } else {
             let alert = UIAlertController(title: "Error", message: "Incorrect login or password", preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok", style: .default) { _ in
                 self.PasswordTextField.text = ""
+                self.UserNameTextField.text = ""
             }
             
             alert.addAction(action)
