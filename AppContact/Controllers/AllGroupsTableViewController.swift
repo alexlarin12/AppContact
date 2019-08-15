@@ -10,6 +10,14 @@ import UIKit
 
 class AllGroupsTableViewController: UITableViewController {
 
+    
+    var groups:[GroupsModel] = [
+        GroupsModel(groupName: "Cars", groupImage: UIImage(named:"cargroup")!),
+        GroupsModel(groupName: "House", groupImage: UIImage(named: "housegroup")!),
+        GroupsModel(groupName: "Apple", groupImage: UIImage(named: "applegroup")!),
+        GroupsModel(groupName: "Android", groupImage: UIImage(named: "androidgroup")!),
+        GroupsModel(groupName: "Electric", groupImage: UIImage(named: "electricgroup")!),
+        GroupsModel(groupName: "Books", groupImage: UIImage(named: "booksgroup")!)]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,23 +32,26 @@ class AllGroupsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return groups.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell", for: indexPath) as! GroupCell
+        let group = groups[indexPath.row]
+        cell.GroupLabel.text = group.groupName
+        cell.GroupImage.image = group.groupImage
+        
         // Configure the cell...
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

@@ -9,7 +9,14 @@
 import UIKit
 
 class FriendsTableViewController: UITableViewController {
-    override func viewDidLoad() {
+    
+    var friends:[FriendsModel] = [
+        FriendsModel(friendName: "Alex Larin", friendImage: UIImage(named: "img1")!),
+        FriendsModel(friendName: "Elena Voevodina", friendImage: UIImage(named: "catfriend2")!),
+        FriendsModel(friendName: "Masha Larina", friendImage: UIImage(named: "catfriend4")!),
+        FriendsModel(friendName: "Ivan Larin", friendImage: UIImage(named: "catfriend1")!),
+        FriendsModel(friendName: "Nastya Larina", friendImage: UIImage(named: "catfriend3")!)]
+     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Uncomment the following line to preserve selection between presentations
@@ -23,23 +30,26 @@ class FriendsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return friends.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as! FriendCell
+        let friend = friends[indexPath.row]
+        
+        cell.FriendLabel.text = friend.friendName
+        cell.FriendImageView.image = friend.friendImage
         // Configure the cell...
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -78,12 +88,24 @@ class FriendsTableViewController: UITableViewController {
 
     
     // MARK: - Navigation
-/*
+
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "WatchFriend",
+            let oneFriendController = segue.destination as? OneFriendCollectionViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+            let name = friends[indexPath.row].friendName
+            let image = friends[indexPath.row].friendImage
+            oneFriendController.friendNameForTitle = name
+            oneFriendController.friendImageForCollection = image
+        }
+        
+        
+        
+        
     }
- */
+ 
 
 }
