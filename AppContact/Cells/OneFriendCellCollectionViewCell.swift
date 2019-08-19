@@ -13,6 +13,9 @@ class OneFriendCellCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var OneFriendLabel: UILabel!
     
     @IBOutlet weak var OneFriendImageView: UIImageView!
+    @IBOutlet weak var likeCountLabel: UILabel!
+    
+    @IBOutlet weak var LikeButton: LikeButton!
     
     
     
