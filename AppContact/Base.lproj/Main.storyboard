@@ -163,40 +163,86 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="77" id="o8h-wH-Da3" customClass="FriendCell" customModule="AppContact" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="77" id="o8h-wH-Da3" customClass="FriendCell" customModule="AppContact" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o8h-wH-Da3" id="bdR-nm-HQn">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ContentCellView" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o8h-wH-Da3" id="bdR-nm-HQn">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="76.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" " translatesAutoresizingMaskIntoConstraints="NO" id="9Tr-7J-Oa7" customClass="FriendCircleImageView" customModule="AppContact" customModuleProvider="target">
-                                            <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8h-cg-dL0" customClass="ContentCellView" customModule="AppContact" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFi-pb-1iD">
+                                                    <rect key="frame" x="92" y="27.5" width="306" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEs-rc-Qr3" customClass="ShadowView" customModule="AppContact" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" " translatesAutoresizingMaskIntoConstraints="NO" id="9Tr-7J-Oa7" customClass="FriendCircleImageView" customModule="AppContact" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="9Tr-7J-Oa7" firstAttribute="top" secondItem="EEs-rc-Qr3" secondAttribute="top" id="1Hw-vu-pRd"/>
+                                                        <constraint firstAttribute="bottom" secondItem="9Tr-7J-Oa7" secondAttribute="bottom" id="87I-oN-bhH"/>
+                                                        <constraint firstAttribute="width" secondItem="EEs-rc-Qr3" secondAttribute="height" multiplier="1:1" id="Jns-p1-aQj"/>
+                                                        <constraint firstAttribute="width" constant="60" id="VDg-H1-X3s"/>
+                                                        <constraint firstItem="9Tr-7J-Oa7" firstAttribute="centerY" secondItem="EEs-rc-Qr3" secondAttribute="centerY" id="lrp-83-Qb0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="9Tr-7J-Oa7" secondAttribute="trailing" id="uXy-P3-eV9"/>
+                                                        <constraint firstItem="9Tr-7J-Oa7" firstAttribute="leading" secondItem="EEs-rc-Qr3" secondAttribute="leading" id="yDP-ZI-j1I"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="9Tr-7J-Oa7" secondAttribute="height" multiplier="1:1" id="9sF-FV-HbE"/>
-                                                <constraint firstAttribute="width" constant="60" id="bgI-Qz-UmT"/>
+                                                <constraint firstItem="iFi-pb-1iD" firstAttribute="leading" secondItem="EEs-rc-Qr3" secondAttribute="trailing" constant="16" id="2sd-BJ-Xdv"/>
+                                                <constraint firstItem="EEs-rc-Qr3" firstAttribute="leading" secondItem="T8h-cg-dL0" secondAttribute="leading" constant="16" id="Bgq-Jb-pEE"/>
+                                                <constraint firstItem="EEs-rc-Qr3" firstAttribute="centerY" secondItem="T8h-cg-dL0" secondAttribute="centerY" id="Jal-cd-yue"/>
+                                                <constraint firstItem="EEs-rc-Qr3" firstAttribute="top" secondItem="T8h-cg-dL0" secondAttribute="top" constant="8" id="Tft-71-S9F"/>
+                                                <constraint firstAttribute="bottom" secondItem="EEs-rc-Qr3" secondAttribute="bottom" constant="8" id="ZgY-dn-ghX"/>
+                                                <constraint firstItem="iFi-pb-1iD" firstAttribute="centerY" secondItem="EEs-rc-Qr3" secondAttribute="centerY" id="vqD-6h-abT"/>
+                                                <constraint firstAttribute="trailing" secondItem="iFi-pb-1iD" secondAttribute="trailing" constant="16" id="wKH-F0-msM"/>
                                             </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFi-pb-1iD">
-                                            <rect key="frame" x="92" y="27.5" width="42" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                    <color key="value" red="1" green="0.99714794806626861" blue="0.90832173229425317" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                    <color key="value" red="0.76654708306416275" green="0.72710915321111347" blue="0.34884626236962901" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                                    <point key="value" x="1" y="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                                    <point key="value" x="0.0" y="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="9Tr-7J-Oa7" firstAttribute="centerY" secondItem="bdR-nm-HQn" secondAttribute="centerY" id="HaZ-i3-pcQ"/>
-                                        <constraint firstItem="iFi-pb-1iD" firstAttribute="centerY" secondItem="9Tr-7J-Oa7" secondAttribute="centerY" id="W1r-2x-Nac"/>
-                                        <constraint firstAttribute="bottom" secondItem="9Tr-7J-Oa7" secondAttribute="bottom" constant="8" id="WKL-L8-q3E"/>
-                                        <constraint firstItem="iFi-pb-1iD" firstAttribute="leading" secondItem="9Tr-7J-Oa7" secondAttribute="trailing" constant="16" id="hbP-9m-MZt"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iFi-pb-1iD" secondAttribute="trailing" constant="20" symbolic="YES" id="myd-YO-WfC"/>
-                                        <constraint firstItem="9Tr-7J-Oa7" firstAttribute="top" secondItem="bdR-nm-HQn" secondAttribute="top" constant="8" id="vkM-e0-VhX"/>
-                                        <constraint firstItem="9Tr-7J-Oa7" firstAttribute="leading" secondItem="bdR-nm-HQn" secondAttribute="leading" constant="16" id="xB1-6F-W89"/>
+                                        <constraint firstAttribute="trailing" secondItem="T8h-cg-dL0" secondAttribute="trailing" id="JDe-7D-Vh5"/>
+                                        <constraint firstItem="T8h-cg-dL0" firstAttribute="centerY" secondItem="bdR-nm-HQn" secondAttribute="centerY" id="dGZ-L7-cl4"/>
+                                        <constraint firstAttribute="bottom" secondItem="T8h-cg-dL0" secondAttribute="bottom" id="ewt-JG-W3s"/>
+                                        <constraint firstItem="T8h-cg-dL0" firstAttribute="top" secondItem="bdR-nm-HQn" secondAttribute="top" id="wh4-WL-fFR"/>
+                                        <constraint firstItem="T8h-cg-dL0" firstAttribute="leading" secondItem="bdR-nm-HQn" secondAttribute="leading" id="xB6-5p-nbp"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="ContentView" destination="T8h-cg-dL0" id="Jwf-KJ-alH"/>
                                     <outlet property="FriendImageView" destination="9Tr-7J-Oa7" id="Vtk-LX-8xW"/>
                                     <outlet property="FriendLabel" destination="iFi-pb-1iD" id="7sH-4q-h57"/>
+                                    <outlet property="shadowView" destination="EEs-rc-Qr3" id="W17-BN-iaW"/>
                                     <segue destination="11q-nM-Q1d" kind="show" identifier="WatchFriend" id="whD-zG-aio"/>
                                 </connections>
                             </tableViewCell>

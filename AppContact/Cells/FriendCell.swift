@@ -14,12 +14,23 @@ class FriendCell: UITableViewCell {
     
     @IBOutlet weak var FriendImageView: UIImageView!
     
+    @IBOutlet weak var ShadowView: ShadowView!
+    
+    @IBOutlet weak var ContentView: ContentCellView!
     
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    ShadowView.backgroundColor = .clear
+    contentView.backgroundColor = #colorLiteral(red: 0.9595988393, green: 1, blue: 0.7413884997, alpha: 1)
+        
+       
+
+       
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,5 +38,5 @@ class FriendCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+  
 }

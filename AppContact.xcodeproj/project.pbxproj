@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431EF591231072480064C6F3 /* ConttentCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431EF590231072480064C6F3 /* ConttentCellView.swift */; };
 		59A1DDAE22FEB8DA001B8D09 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1DDAD22FEB8DA001B8D09 /* FriendsTableViewController.swift */; };
 		59A1DDB022FEB903001B8D09 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1DDAF22FEB903001B8D09 /* GroupsTableViewController.swift */; };
 		59A1DDB222FEB925001B8D09 /* AllGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1DDB122FEB925001B8D09 /* AllGroupsTableViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		431EF590231072480064C6F3 /* ConttentCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConttentCellView.swift; sourceTree = "<group>"; };
 		59A1DDAD22FEB8DA001B8D09 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		59A1DDAF22FEB903001B8D09 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 		59A1DDB122FEB925001B8D09 /* AllGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				59E3E64D23085600007F9EF1 /* FriendCircleImageView.swift */,
 				59E3E64F23085826007F9EF1 /* ShadowView.swift */,
+				431EF590231072480064C6F3 /* ConttentCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				59A1DDB222FEB925001B8D09 /* AllGroupsTableViewController.swift in Sources */,
 				59A1DDB422FEB9D0001B8D09 /* OneFriendCollectionViewController.swift in Sources */,
 				59A64A9F22F5735E002FF855 /* AppDelegate.swift in Sources */,
+				431EF591231072480064C6F3 /* ConttentCellView.swift in Sources */,
 				59A1DDAE22FEB8DA001B8D09 /* FriendsTableViewController.swift in Sources */,
 				59E3E65023085826007F9EF1 /* ShadowView.swift in Sources */,
 				59A1DDB92303F430001B8D09 /* GroupCell.swift in Sources */,
