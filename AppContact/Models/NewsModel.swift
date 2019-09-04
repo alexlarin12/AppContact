@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+struct NewsModel {
+    var userImageNews:String?
+    var userNameNews:String?
+    var timeNews: String?
+    var textNews:String?
+    var imageNews:String?
+    
+}

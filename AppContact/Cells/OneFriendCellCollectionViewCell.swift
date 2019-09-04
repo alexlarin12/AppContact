@@ -14,9 +14,14 @@ class OneFriendCellCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var OneFriendImageView: UIImageView!
     @IBOutlet weak var likeCountLabel: UILabel!
-    
+    var likeCount = 575
     @IBOutlet weak var LikeButton: LikeButton!
     
+    @IBAction func likeButtonTap(_ sender: Any) {
+        likeCount += 1
+        likeCountLabel.text = "\(likeCount)"
+    }
     
+ 
     
 }
