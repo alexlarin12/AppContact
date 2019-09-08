@@ -29,7 +29,7 @@ class FriendCircleImageView: UIImageView {
         layer.cornerRadius = bounds.width/2
         friendImageView.layer.cornerRadius = bounds.width/2
     }
-    
+
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
