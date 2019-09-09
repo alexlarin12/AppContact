@@ -177,7 +177,7 @@
         <!--FRIENDS-->
         <scene sceneID="su6-0X-wly">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vRe-kg-uWa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vRe-kg-uWa" customClass="CustomNavigationViewController" customModule="AppContact" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="FRIENDS" image="icon rectangle" id="jiq-VR-YJt">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
@@ -403,7 +403,7 @@
         <!--GROUPS-->
         <scene sceneID="DwG-ZP-obO">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CTk-g4-AfA" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CTk-g4-AfA" customClass="CustomNavigationViewController" customModule="AppContact" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="GROUPS" image="icon rectangle" id="NjL-bY-sog">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
@@ -502,7 +502,7 @@
         <!--NEWS-->
         <scene sceneID="sEK-YQ-tDF">
             <objects>
-                <navigationController id="r4G-py-Het" sceneMemberID="viewController">
+                <navigationController id="r4G-py-Het" customClass="CustomNavigationViewController" customModule="AppContact" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="NEWS" image="icon rectangle" selectedImage="icon rectangle" id="Vnp-JU-5Vf">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
