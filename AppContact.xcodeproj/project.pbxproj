@@ -14,6 +14,9 @@
 		431EF5BA231A53D10064C6F3 /* NewsVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431EF5B9231A53D10064C6F3 /* NewsVC+UITableViewDataSource.swift */; };
 		431EF5BC231A573C0064C6F3 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431EF5BB231A573C0064C6F3 /* NewsModel.swift */; };
 		431EF5C0231AEAF70064C6F3 /* LikeButtonRed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431EF5BF231AEAF70064C6F3 /* LikeButtonRed.swift */; };
+		43FFEA9B23269E1700EF6056 /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFEA9A23269E1700EF6056 /* CustomNavigationViewController.swift */; };
+		43FFEA9D23269EF500EF6056 /* CustomPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFEA9C23269EF500EF6056 /* CustomPushAnimator.swift */; };
+		43FFEA9F23269F7100EF6056 /* CustomPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFEA9E23269F7100EF6056 /* CustomPopAnimator.swift */; };
 		59A1DDAE22FEB8DA001B8D09 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1DDAD22FEB8DA001B8D09 /* FriendsTableViewController.swift */; };
 		59A1DDB022FEB903001B8D09 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1DDAF22FEB903001B8D09 /* GroupsTableViewController.swift */; };
 		59A1DDB222FEB925001B8D09 /* AllGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1DDB122FEB925001B8D09 /* AllGroupsTableViewController.swift */; };
@@ -40,6 +43,9 @@
 		431EF5B9231A53D10064C6F3 /* NewsVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		431EF5BB231A573C0064C6F3 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		431EF5BF231AEAF70064C6F3 /* LikeButtonRed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonRed.swift; sourceTree = "<group>"; };
+		43FFEA9A23269E1700EF6056 /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
+		43FFEA9C23269EF500EF6056 /* CustomPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushAnimator.swift; sourceTree = "<group>"; };
+		43FFEA9E23269F7100EF6056 /* CustomPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopAnimator.swift; sourceTree = "<group>"; };
 		59A1DDAD22FEB8DA001B8D09 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		59A1DDAF22FEB903001B8D09 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 		59A1DDB122FEB925001B8D09 /* AllGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43FFEA99232698EF00EF6056 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				43FFEA9C23269EF500EF6056 /* CustomPushAnimator.swift */,
+				43FFEA9E23269F7100EF6056 /* CustomPopAnimator.swift */,
+			);
+			path = Animators;
+			sourceTree = "<group>";
+		};
 		59A1DDB52303F3A7001B8D09 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +136,7 @@
 				59A1DDB52303F3A7001B8D09 /* Cells */,
 				59A1DDBC23045C97001B8D09 /* Models */,
 				59E3E64C23085594007F9EF1 /* Views */,
+				43FFEA99232698EF00EF6056 /* Animators */,
 			);
 			path = AppContact;
 			sourceTree = "<group>";
@@ -129,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				59A64AB022F575BA002FF855 /* LaunchController.swift */,
+				43FFEA9A23269E1700EF6056 /* CustomNavigationViewController.swift */,
 				431EF5B3231A46560064C6F3 /* NewsViewController.swift */,
 				431EF5B9231A53D10064C6F3 /* NewsVC+UITableViewDataSource.swift */,
 				59A1DDAD22FEB8DA001B8D09 /* FriendsTableViewController.swift */,
@@ -223,7 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				59A1DDC023046249001B8D09 /* GroupsModel.swift in Sources */,
+				43FFEA9B23269E1700EF6056 /* CustomNavigationViewController.swift in Sources */,
 				59A1DDB72303F404001B8D09 /* FriendCell.swift in Sources */,
+				43FFEA9F23269F7100EF6056 /* CustomPopAnimator.swift in Sources */,
 				59E3E64E23085600007F9EF1 /* FriendCircleImageView.swift in Sources */,
 				431EF5B4231A46560064C6F3 /* NewsViewController.swift in Sources */,
 				59A64AB122F575BA002FF855 /* LaunchController.swift in Sources */,
@@ -233,6 +252,7 @@
 				59A1DDBB2303F461001B8D09 /* OneFriendCellCollectionViewCell.swift in Sources */,
 				59A1DDB222FEB925001B8D09 /* AllGroupsTableViewController.swift in Sources */,
 				59A1DDB422FEB9D0001B8D09 /* OneFriendCollectionViewController.swift in Sources */,
+				43FFEA9D23269EF500EF6056 /* CustomPushAnimator.swift in Sources */,
 				59A64A9F22F5735E002FF855 /* AppDelegate.swift in Sources */,
 				431EF5BA231A53D10064C6F3 /* NewsVC+UITableViewDataSource.swift in Sources */,
 				431EF5BC231A573C0064C6F3 /* NewsModel.swift in Sources */,
