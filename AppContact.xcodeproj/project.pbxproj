@@ -14,9 +14,18 @@
 		431EF5BA231A53D10064C6F3 /* NewsVC+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431EF5B9231A53D10064C6F3 /* NewsVC+UITableViewDataSource.swift */; };
 		431EF5BC231A573C0064C6F3 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431EF5BB231A573C0064C6F3 /* NewsModel.swift */; };
 		431EF5C0231AEAF70064C6F3 /* LikeButtonRed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431EF5BF231AEAF70064C6F3 /* LikeButtonRed.swift */; };
+		43D6FBD6232825E6008A2EDE /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D6FBD5232825E6008A2EDE /* GroupViewController.swift */; };
+		43D6FBD9232828D3008A2EDE /* AloneGroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D6FBD7232828D3008A2EDE /* AloneGroupCollectionViewCell.swift */; };
+		43D6FBDA232828D3008A2EDE /* AloneGroupCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D6FBD8232828D3008A2EDE /* AloneGroupCollectionViewCell.xib */; };
+		43D6FBDD23282911008A2EDE /* AloneGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D6FBDB23282911008A2EDE /* AloneGroupTableViewCell.swift */; };
+		43D6FBDE23282911008A2EDE /* AloneGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D6FBDC23282911008A2EDE /* AloneGroupTableViewCell.xib */; };
+		43D6FBE023282D9D008A2EDE /* GroupCarPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D6FBDF23282D9D008A2EDE /* GroupCarPhotoModel.swift */; };
+		43D6FBE223282FFE008A2EDE /* GroupVC+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D6FBE123282FFE008A2EDE /* GroupVC+UICollectionViewDataSource.swift */; };
 		43FFEA9B23269E1700EF6056 /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFEA9A23269E1700EF6056 /* CustomNavigationViewController.swift */; };
 		43FFEA9D23269EF500EF6056 /* CustomPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFEA9C23269EF500EF6056 /* CustomPushAnimator.swift */; };
 		43FFEA9F23269F7100EF6056 /* CustomPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFEA9E23269F7100EF6056 /* CustomPopAnimator.swift */; };
+		43FFEAA12326A3B500EF6056 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFEAA02326A3B500EF6056 /* Animator.swift */; };
+		43FFEAA42326A44100EF6056 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFEAA32326A44100EF6056 /* CustomSegue.swift */; };
 		59A1DDAE22FEB8DA001B8D09 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1DDAD22FEB8DA001B8D09 /* FriendsTableViewController.swift */; };
 		59A1DDB022FEB903001B8D09 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1DDAF22FEB903001B8D09 /* GroupsTableViewController.swift */; };
 		59A1DDB222FEB925001B8D09 /* AllGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1DDB122FEB925001B8D09 /* AllGroupsTableViewController.swift */; };
@@ -43,9 +52,18 @@
 		431EF5B9231A53D10064C6F3 /* NewsVC+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsVC+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		431EF5BB231A573C0064C6F3 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		431EF5BF231AEAF70064C6F3 /* LikeButtonRed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonRed.swift; sourceTree = "<group>"; };
+		43D6FBD5232825E6008A2EDE /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		43D6FBD7232828D3008A2EDE /* AloneGroupCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AloneGroupCollectionViewCell.swift; sourceTree = "<group>"; };
+		43D6FBD8232828D3008A2EDE /* AloneGroupCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AloneGroupCollectionViewCell.xib; sourceTree = "<group>"; };
+		43D6FBDB23282911008A2EDE /* AloneGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AloneGroupTableViewCell.swift; sourceTree = "<group>"; };
+		43D6FBDC23282911008A2EDE /* AloneGroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AloneGroupTableViewCell.xib; sourceTree = "<group>"; };
+		43D6FBDF23282D9D008A2EDE /* GroupCarPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCarPhotoModel.swift; sourceTree = "<group>"; };
+		43D6FBE123282FFE008A2EDE /* GroupVC+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupVC+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		43FFEA9A23269E1700EF6056 /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
 		43FFEA9C23269EF500EF6056 /* CustomPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushAnimator.swift; sourceTree = "<group>"; };
 		43FFEA9E23269F7100EF6056 /* CustomPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopAnimator.swift; sourceTree = "<group>"; };
+		43FFEAA02326A3B500EF6056 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		43FFEAA32326A44100EF6056 /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
 		59A1DDAD22FEB8DA001B8D09 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		59A1DDAF22FEB903001B8D09 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 		59A1DDB122FEB925001B8D09 /* AllGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewController.swift; sourceTree = "<group>"; };
@@ -82,14 +100,27 @@
 			children = (
 				43FFEA9C23269EF500EF6056 /* CustomPushAnimator.swift */,
 				43FFEA9E23269F7100EF6056 /* CustomPopAnimator.swift */,
+				43FFEAA02326A3B500EF6056 /* Animator.swift */,
 			);
 			path = Animators;
+			sourceTree = "<group>";
+		};
+		43FFEAA22326A3EA00EF6056 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				43FFEAA32326A44100EF6056 /* CustomSegue.swift */,
+			);
+			path = Segues;
 			sourceTree = "<group>";
 		};
 		59A1DDB52303F3A7001B8D09 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				59A1DDB62303F404001B8D09 /* FriendCell.swift */,
+				43D6FBDB23282911008A2EDE /* AloneGroupTableViewCell.swift */,
+				43D6FBDC23282911008A2EDE /* AloneGroupTableViewCell.xib */,
+				43D6FBD7232828D3008A2EDE /* AloneGroupCollectionViewCell.swift */,
+				43D6FBD8232828D3008A2EDE /* AloneGroupCollectionViewCell.xib */,
 				59A1DDB82303F430001B8D09 /* GroupCell.swift */,
 				59A1DDBA2303F461001B8D09 /* OneFriendCellCollectionViewCell.swift */,
 				431EF5B5231A4AC70064C6F3 /* NewsCell.swift */,
@@ -102,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				59A1DDBD2304622D001B8D09 /* FriendsModel.swift */,
+				43D6FBDF23282D9D008A2EDE /* GroupCarPhotoModel.swift */,
 				59A1DDBF23046249001B8D09 /* GroupsModel.swift */,
 				431EF5BB231A573C0064C6F3 /* NewsModel.swift */,
 			);
@@ -137,6 +169,7 @@
 				59A1DDBC23045C97001B8D09 /* Models */,
 				59E3E64C23085594007F9EF1 /* Views */,
 				43FFEA99232698EF00EF6056 /* Animators */,
+				43FFEAA22326A3EA00EF6056 /* Segues */,
 			);
 			path = AppContact;
 			sourceTree = "<group>";
@@ -145,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				59A64AB022F575BA002FF855 /* LaunchController.swift */,
+				43D6FBD5232825E6008A2EDE /* GroupViewController.swift */,
+				43D6FBE123282FFE008A2EDE /* GroupVC+UICollectionViewDataSource.swift */,
 				43FFEA9A23269E1700EF6056 /* CustomNavigationViewController.swift */,
 				431EF5B3231A46560064C6F3 /* NewsViewController.swift */,
 				431EF5B9231A53D10064C6F3 /* NewsVC+UITableViewDataSource.swift */,
@@ -225,6 +260,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D6FBDA232828D3008A2EDE /* AloneGroupCollectionViewCell.xib in Resources */,
+				43D6FBDE23282911008A2EDE /* AloneGroupTableViewCell.xib in Resources */,
 				59A64AA922F57360002FF855 /* LaunchScreen.storyboard in Resources */,
 				59A64AA622F57360002FF855 /* Assets.xcassets in Resources */,
 				431EF5B8231A4AC70064C6F3 /* NewsCell.xib in Resources */,
@@ -239,27 +276,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D6FBE023282D9D008A2EDE /* GroupCarPhotoModel.swift in Sources */,
 				59A1DDC023046249001B8D09 /* GroupsModel.swift in Sources */,
 				43FFEA9B23269E1700EF6056 /* CustomNavigationViewController.swift in Sources */,
 				59A1DDB72303F404001B8D09 /* FriendCell.swift in Sources */,
 				43FFEA9F23269F7100EF6056 /* CustomPopAnimator.swift in Sources */,
+				43D6FBDD23282911008A2EDE /* AloneGroupTableViewCell.swift in Sources */,
+				43D6FBD6232825E6008A2EDE /* GroupViewController.swift in Sources */,
 				59E3E64E23085600007F9EF1 /* FriendCircleImageView.swift in Sources */,
 				431EF5B4231A46560064C6F3 /* NewsViewController.swift in Sources */,
 				59A64AB122F575BA002FF855 /* LaunchController.swift in Sources */,
 				59A1DDB022FEB903001B8D09 /* GroupsTableViewController.swift in Sources */,
 				431EF5B7231A4AC70064C6F3 /* NewsCell.swift in Sources */,
+				43D6FBE223282FFE008A2EDE /* GroupVC+UICollectionViewDataSource.swift in Sources */,
 				431EF5C0231AEAF70064C6F3 /* LikeButtonRed.swift in Sources */,
 				59A1DDBB2303F461001B8D09 /* OneFriendCellCollectionViewCell.swift in Sources */,
 				59A1DDB222FEB925001B8D09 /* AllGroupsTableViewController.swift in Sources */,
 				59A1DDB422FEB9D0001B8D09 /* OneFriendCollectionViewController.swift in Sources */,
 				43FFEA9D23269EF500EF6056 /* CustomPushAnimator.swift in Sources */,
 				59A64A9F22F5735E002FF855 /* AppDelegate.swift in Sources */,
+				43D6FBD9232828D3008A2EDE /* AloneGroupCollectionViewCell.swift in Sources */,
 				431EF5BA231A53D10064C6F3 /* NewsVC+UITableViewDataSource.swift in Sources */,
+				43FFEAA42326A44100EF6056 /* CustomSegue.swift in Sources */,
 				431EF5BC231A573C0064C6F3 /* NewsModel.swift in Sources */,
 				431EF591231072480064C6F3 /* ConttentCellView.swift in Sources */,
 				59A1DDAE22FEB8DA001B8D09 /* FriendsTableViewController.swift in Sources */,
 				59E3E65023085826007F9EF1 /* ShadowView.swift in Sources */,
 				59A1DDB92303F430001B8D09 /* GroupCell.swift in Sources */,
+				43FFEAA12326A3B500EF6056 /* Animator.swift in Sources */,
 				59A1DDBE2304622D001B8D09 /* FriendsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G5Z5S6LQG7;
+				DEVELOPMENT_TEAM = H8D2UQ584W;
 				INFOPLIST_FILE = AppContact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -423,7 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G5Z5S6LQG7;
+				DEVELOPMENT_TEAM = H8D2UQ584W;
 				INFOPLIST_FILE = AppContact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
