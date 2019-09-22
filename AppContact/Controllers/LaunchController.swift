@@ -32,9 +32,12 @@ class LaunchController: UIViewController {
     @IBAction func UnwindSegue(unwindSegue:UIStoryboardSegue){
         
     }
+    
+    
     func checkTextFields() {
-        if UserNameTextField.text == "",
-            PasswordTextField.text == "" {
+        let session = Session.instance
+        if UserNameTextField.text == session.newUserName,
+            PasswordTextField.text == session.newPassword {
             print("Успешный вход.")
             performSegue(withIdentifier: "SuccessLogin", sender: nil)
             
@@ -53,6 +56,7 @@ class LaunchController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // управление жестом
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         ScrollView?.addGestureRecognizer(hideKeyboardGesture)
