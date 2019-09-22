@@ -10,6 +10,40 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="hKK-oj-8ic">
+            <objects>
+                <viewController id="uE8-wc-sFK" customClass="VKViewController" customModule="AppContact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X6a-GY-705">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MaY-hh-7Gi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MaY-hh-7Gi" firstAttribute="top" secondItem="tCI-oA-Kjf" secondAttribute="top" id="KG5-Sb-GbY"/>
+                            <constraint firstItem="tCI-oA-Kjf" firstAttribute="bottom" secondItem="MaY-hh-7Gi" secondAttribute="bottom" id="M78-Bu-eh6"/>
+                            <constraint firstItem="MaY-hh-7Gi" firstAttribute="leading" secondItem="tCI-oA-Kjf" secondAttribute="leading" id="Td6-pO-AJA"/>
+                            <constraint firstItem="tCI-oA-Kjf" firstAttribute="trailing" secondItem="MaY-hh-7Gi" secondAttribute="trailing" id="zp1-ET-u1R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tCI-oA-Kjf"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="MaY-hh-7Gi" id="cao-y7-WoH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seE-53-RxC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1535" y="2473"/>
+        </scene>
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -60,7 +94,7 @@
                                         </state>
                                         <connections>
                                             <action selector="LogInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVM-Xd-YaA"/>
-                                            <segue destination="phj-71-Qv3" kind="presentation" identifier="SuccessLogin" id="Ozs-HU-5Xh"/>
+                                            <segue destination="phj-71-Qv3" kind="presentation" identifier="SuccessLogin" id="psA-ws-RcS"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mbj-KB-bbT">
@@ -163,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1388.4057971014495" y="267.85714285714283"/>
+            <point key="canvasLocation" x="-1861" y="268"/>
         </scene>
         <!--Title-->
         <scene sceneID="GXi-tw-i0e">
@@ -208,6 +242,7 @@
                                 <state key="normal" title="Registration"/>
                                 <connections>
                                     <action selector="newRegistrationButton:" destination="BSo-ND-OcY" eventType="touchUpInside" id="Xx1-Vl-SCm"/>
+                                    <segue destination="uE8-wc-sFK" kind="show" id="nAf-m7-rFQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -721,7 +756,7 @@
         <!--MAIN-->
         <scene sceneID="0Dk-zs-jsG">
             <objects>
-                <navigationController id="sta-PY-w1s" sceneMemberID="viewController">
+                <navigationController id="sta-PY-w1s" customClass="CustomNavigationViewController" customModule="AppContact" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="MAIN" image="icon rectangle" id="Zxp-f9-39x"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AUH-a8-SjP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
